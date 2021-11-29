@@ -19,7 +19,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-
 ---
 
 apiVersion: apps/v1
@@ -43,7 +42,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-
 ---
 
 apiVersion: apps/v1
@@ -67,7 +65,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-
 ---
 
 apiVersion: apps/v1
@@ -91,8 +88,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -115,8 +111,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -139,8 +134,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -163,8 +157,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -187,8 +180,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -211,8 +203,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -235,8 +226,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -259,8 +249,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -283,8 +272,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -307,8 +295,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -331,8 +318,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -355,8 +341,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -379,8 +364,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -404,7 +388,6 @@ spec:
           ports:
             - containerPort: 27017
  
-
 ---
 
 apiVersion: apps/v1
@@ -432,8 +415,7 @@ spec:
               value: root
           ports:
             - containerPort: 3306
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -456,8 +438,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -480,8 +461,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -504,8 +484,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -560,7 +539,6 @@ spec:
     - port: 27017
   selector:
     app: ts-notification-mongo
-
 ---
 
 apiVersion: apps/v1
@@ -584,8 +562,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
- 
----
+ ---
 apiVersion: v1
 kind: Service
 metadata:
@@ -595,7 +572,6 @@ spec:
     - port: 27017
   selector:
     app: ts-delivery-mongo
-
 ---
 
 apiVersion: apps/v1
@@ -622,8 +598,7 @@ spec:
           resources:
             requests:
               cpu: 100m
-              memory: 200Mi
----
+              memory: 200Mi---
 apiVersion: v1
 kind: Service
 metadata:
@@ -633,7 +608,6 @@ spec:
     - port: 5672
   selector:
     app: rabbitmq
-
 ---
 apiVersion: v1
 kind: Service
@@ -644,7 +618,6 @@ spec:
     - port: 27017
   selector:
     app: ts-user-mongo
-
 ---
 apiVersion: v1
 kind: Service
@@ -654,8 +627,7 @@ spec:
   ports:
     - port: 27017
   selector:
-    app: ts-auth-mongo
----
+    app: ts-auth-mongo---
 
 apiVersion: v1
 kind: Service
@@ -666,7 +638,6 @@ spec:
     - port: 27017
   selector:
     app: ts-route-mongo
-
 ---
 
 apiVersion: v1
@@ -678,7 +649,6 @@ spec:
     - port: 27017
   selector:
     app: ts-contacts-mongo
-
 ---
 
 apiVersion: v1
@@ -690,7 +660,6 @@ spec:
     - port: 27017
   selector:
     app: ts-order-mongo
-
 ---
 
 apiVersion: v1
@@ -702,7 +671,6 @@ spec:
     - port: 27017
   selector:
     app: ts-order-other-mongo
-
 ---
 
 apiVersion: v1
@@ -714,7 +682,6 @@ spec:
     - port: 27017
   selector:
     app: ts-config-mongo
-
 ---
 
 apiVersion: v1
@@ -726,7 +693,6 @@ spec:
     - port: 27017
   selector:
     app: ts-station-mongo
-
 ---
 
 apiVersion: v1
@@ -738,7 +704,6 @@ spec:
     - port: 27017
   selector:
     app: ts-train-mongo
-
 ---
 
 apiVersion: v1
@@ -750,7 +715,6 @@ spec:
     - port: 27017
   selector:
     app: ts-travel-mongo
-
 ---
 
 apiVersion: v1
@@ -762,7 +726,6 @@ spec:
     - port: 27017
   selector:
     app: ts-travel2-mongo
-
 ---
 
 apiVersion: v1
@@ -774,7 +737,6 @@ spec:
     - port: 27017
   selector:
     app: ts-price-mongo
-
 ---
 
 apiVersion: v1
@@ -786,7 +748,6 @@ spec:
     - port: 27017
   selector:
     app: ts-security-mongo
-
 ---
 
 apiVersion: v1
@@ -798,7 +759,6 @@ spec:
     - port: 27017
   selector:
     app: ts-inside-payment-mongo
-
 ---
 
 apiVersion: v1
@@ -810,7 +770,6 @@ spec:
     - port: 27017
   selector:
     app: ts-payment-mongo
-
 ---
 
 apiVersion: v1
@@ -822,7 +781,6 @@ spec:
     - port: 27017
   selector:
     app: ts-assurance-mongo
-
 ---
 
 apiVersion: v1
@@ -834,7 +792,6 @@ spec:
     - port: 27017
   selector:
     app: ts-ticket-office-mongo
-
 ---
 
 apiVersion: v1
@@ -846,7 +803,6 @@ spec:
     - port: 3306
   selector:
     app: ts-voucher-mysql
-
 ---
 
 apiVersion: v1
@@ -858,7 +814,6 @@ spec:
     - port: 27017
   selector:
     app: ts-food-map-mongo
-
 ---
 
 apiVersion: v1
@@ -870,7 +825,6 @@ spec:
     - port: 27017
   selector:
     app: ts-consign-mongo
-
 ---
 
 apiVersion: v1
@@ -882,7 +836,6 @@ spec:
     - port: 27017
   selector:
     app: ts-consign-price-mongo
-
 ---
 
 apiVersion: v1

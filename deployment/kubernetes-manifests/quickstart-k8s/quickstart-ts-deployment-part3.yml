@@ -17,7 +17,6 @@ spec:
         - name: ts-ui-dashboard
           image: codewisdom/ts-ui-dashboard:0.2.0
           imagePullPolicy: Always
-
 ---
 apiVersion: v1
 kind: Service
