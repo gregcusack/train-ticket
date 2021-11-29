@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-ui-dashboard
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -18,13 +19,6 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
 
 ---
 apiVersion: v1
