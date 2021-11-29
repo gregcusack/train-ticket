@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-user-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -18,16 +19,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
+
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-auth-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -44,16 +43,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
+
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-route-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -70,10 +67,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -81,6 +74,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-contacts-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -97,17 +91,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-order-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -124,17 +115,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-order-other-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -151,17 +139,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-config-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -178,17 +163,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-station-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -205,17 +187,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-train-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -232,17 +211,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-travel-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -259,17 +235,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-travel2-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -286,17 +259,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-price-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -313,17 +283,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-security-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -340,17 +307,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-inside-payment-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -367,17 +331,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-payment-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -394,17 +355,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-assurance-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -421,17 +379,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-ticket-office-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -448,11 +403,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 
 ---
 
@@ -460,6 +411,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-voucher-mysql
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -480,17 +432,14 @@ spec:
               value: root
           ports:
             - containerPort: 3306
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-food-map-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -507,17 +456,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-consign-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -534,17 +480,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-consign-price-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -561,17 +504,14 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-food-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -588,15 +528,12 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
----
+ ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-notification-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -613,11 +550,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
----
+ ---
 apiVersion: v1
 kind: Service
 metadata:
@@ -634,6 +567,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: ts-delivery-mongo
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
@@ -650,11 +584,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
+ 
 ---
 apiVersion: v1
 kind: Service
@@ -672,6 +602,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rabbitmq
+  namespace: train-ticket
 spec:
   selector:
     matchLabels:
