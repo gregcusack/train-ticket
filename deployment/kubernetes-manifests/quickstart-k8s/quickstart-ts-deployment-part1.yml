@@ -19,10 +19,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
+
 ---
 
 apiVersion: apps/v1
@@ -46,10 +43,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
+
 ---
 
 apiVersion: apps/v1
@@ -73,10 +67,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -101,10 +91,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -129,10 +115,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -157,10 +139,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -185,10 +163,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -213,10 +187,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -241,10 +211,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -269,10 +235,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -297,10 +259,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -325,10 +283,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -353,10 +307,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -381,10 +331,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -409,10 +355,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -437,10 +379,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -465,11 +403,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
-
 
 ---
 
@@ -498,10 +431,6 @@ spec:
               value: root
           ports:
             - containerPort: 3306
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -526,10 +455,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -554,10 +479,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -582,10 +503,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 
 ---
 
@@ -610,10 +527,7 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
+
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -636,10 +550,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 27017
-          resources:
-            requests:
-              cpu: 50m
-              memory: 100Mi
 ---
 apiVersion: v1
 kind: Service
@@ -713,10 +623,6 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 5672
-          resources:
-            requests:
-              cpu: 100m
-              memory: 200Mi
 ---
 apiVersion: v1
 kind: Service
