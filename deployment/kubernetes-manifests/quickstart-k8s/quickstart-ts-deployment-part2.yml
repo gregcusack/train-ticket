@@ -2147,7 +2147,7 @@ spec:
   ports:
     - name: http
       port: 12340
-      nodePort: 30000
+      # nodePort: 30000
   selector:
     app: ts-auth-service
 
