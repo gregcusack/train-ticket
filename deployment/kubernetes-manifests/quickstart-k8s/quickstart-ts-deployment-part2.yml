@@ -2205,7 +2205,6 @@ metadata:
   name: ts-travel-service
   namespace: train-ticket
 spec:
-  type: NodePort
   ports:
     - name: http
       port: 12346
