@@ -243,212 +243,212 @@ spec:
 #            initialDelaySeconds: 60
 #            periodSeconds: 10
 #            timeoutSeconds: 5
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ts-basic-service
-  namespace: train-ticket
-spec:
-  selector:
-    matchLabels:
-      app: ts-basic-service
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: ts-basic-service
-    spec:
-      containers:
-        - name: ts-basic-service
-          image: codewisdom/ts-basic-service:0.2.0
-          imagePullPolicy: Always
-          env:
-            - name: NODE_IP
-              valueFrom:
-                fieldRef:
-                  fieldPath: status.hostIP
-          ports:
-            - containerPort: 15680
-#          resources:
-#            requests:
-#              cpu: 100m
-#              memory: 100Mi
-#            limits:
-#              cpu: 500m
-#              memory: 500Mi
-#          readinessProbe:
-#            tcpSocket:
-#              port: 15680
-#            initialDelaySeconds: 60
-#            periodSeconds: 10
-#            timeoutSeconds: 5
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ts-cancel-service
-  namespace: train-ticket
-spec:
-  selector:
-    matchLabels:
-      app: ts-cancel-service
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: ts-cancel-service
-    spec:
-      containers:
-        - name: ts-cancel-service
-          image: codewisdom/ts-cancel-service:0.2.0
-          imagePullPolicy: Always
-          env:
-            - name: NODE_IP
-              valueFrom:
-                fieldRef:
-                  fieldPath: status.hostIP
-          ports:
-            - containerPort: 18885
-#          resources:
-#            requests:
-#              cpu: 100m
-#              memory: 100Mi
-#            limits:
-#              cpu: 500m
-#              memory: 500Mi
-#          readinessProbe:
-#            tcpSocket:
-#              port: 18885
-#            initialDelaySeconds: 60
-#            periodSeconds: 10
-#            timeoutSeconds: 5
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ts-config-service
-  namespace: train-ticket
-spec:
-  selector:
-    matchLabels:
-      app: ts-config-service
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: ts-config-service
-    spec:
-      containers:
-        - name: ts-config-service
-          image: codewisdom/ts-config-service:0.2.0
-          imagePullPolicy: Always
-          env:
-            - name: NODE_IP
-              valueFrom:
-                fieldRef:
-                  fieldPath: status.hostIP
-          ports:
-            - containerPort: 15679
-#          resources:
-#            requests:
-#              cpu: 100m
-#              memory: 100Mi
-#            limits:
-#              cpu: 500m
-#              memory: 500Mi
-#          readinessProbe:
-#            tcpSocket:
-#              port: 15679
-#            initialDelaySeconds: 60
-#            periodSeconds: 10
-#            timeoutSeconds: 5
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ts-consign-price-service
-  namespace: train-ticket
-spec:
-  selector:
-    matchLabels:
-      app: ts-consign-price-service
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: ts-consign-price-service
-    spec:
-      containers:
-        - name: ts-consign-price-service
-          image: codewisdom/ts-consign-price-service:0.2.0
-          imagePullPolicy: Always
-          env:
-            - name: NODE_IP
-              valueFrom:
-                fieldRef:
-                  fieldPath: status.hostIP
-          ports:
-            - containerPort: 16110
-#          resources:
-#            requests:
-#              cpu: 100m
-#              memory: 100Mi
-#            limits:
-#              cpu: 500m
-#              memory: 500Mi
-#          readinessProbe:
-#            tcpSocket:
-#              port: 16110
-#            initialDelaySeconds: 60
-#            periodSeconds: 10
-#            timeoutSeconds: 5
----
-
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: ts-consign-service
-  namespace: train-ticket
-spec:
-  selector:
-    matchLabels:
-      app: ts-consign-service
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: ts-consign-service
-    spec:
-      containers:
-        - name: ts-consign-service
-          image: codewisdom/ts-consign-service:0.2.0
-          imagePullPolicy: Always
-          env:
-            - name: NODE_IP
-              valueFrom:
-                fieldRef:
-                  fieldPath: status.hostIP
-          ports:
-            - containerPort: 16111
-#          resources:
-#            requests:
-#              cpu: 100m
-#              memory: 100Mi
-#            limits:
-#              cpu: 500m
-#              memory: 500Mi
-#          readinessProbe:
-#            tcpSocket:
-#              port: 16111
-#            initialDelaySeconds: 60
-#            periodSeconds: 10
-#            timeoutSeconds: 5
 # ---
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: ts-basic-service
+#   namespace: train-ticket
+# spec:
+#   selector:
+#     matchLabels:
+#       app: ts-basic-service
+#   replicas: 1
+#   template:
+#     metadata:
+#       labels:
+#         app: ts-basic-service
+#     spec:
+#       containers:
+#         - name: ts-basic-service
+#           image: codewisdom/ts-basic-service:0.2.0
+#           imagePullPolicy: Always
+#           env:
+#             - name: NODE_IP
+#               valueFrom:
+#                 fieldRef:
+#                   fieldPath: status.hostIP
+#           ports:
+#             - containerPort: 15680
+# #          resources:
+# #            requests:
+# #              cpu: 100m
+# #              memory: 100Mi
+# #            limits:
+# #              cpu: 500m
+# #              memory: 500Mi
+# #          readinessProbe:
+# #            tcpSocket:
+# #              port: 15680
+# #            initialDelaySeconds: 60
+# #            periodSeconds: 10
+# #            timeoutSeconds: 5
+# ---
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: ts-cancel-service
+#   namespace: train-ticket
+# spec:
+#   selector:
+#     matchLabels:
+#       app: ts-cancel-service
+#   replicas: 1
+#   template:
+#     metadata:
+#       labels:
+#         app: ts-cancel-service
+#     spec:
+#       containers:
+#         - name: ts-cancel-service
+#           image: codewisdom/ts-cancel-service:0.2.0
+#           imagePullPolicy: Always
+#           env:
+#             - name: NODE_IP
+#               valueFrom:
+#                 fieldRef:
+#                   fieldPath: status.hostIP
+#           ports:
+#             - containerPort: 18885
+# #          resources:
+# #            requests:
+# #              cpu: 100m
+# #              memory: 100Mi
+# #            limits:
+# #              cpu: 500m
+# #              memory: 500Mi
+# #          readinessProbe:
+# #            tcpSocket:
+# #              port: 18885
+# #            initialDelaySeconds: 60
+# #            periodSeconds: 10
+# #            timeoutSeconds: 5
+# ---
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: ts-config-service
+#   namespace: train-ticket
+# spec:
+#   selector:
+#     matchLabels:
+#       app: ts-config-service
+#   replicas: 1
+#   template:
+#     metadata:
+#       labels:
+#         app: ts-config-service
+#     spec:
+#       containers:
+#         - name: ts-config-service
+#           image: codewisdom/ts-config-service:0.2.0
+#           imagePullPolicy: Always
+#           env:
+#             - name: NODE_IP
+#               valueFrom:
+#                 fieldRef:
+#                   fieldPath: status.hostIP
+#           ports:
+#             - containerPort: 15679
+# #          resources:
+# #            requests:
+# #              cpu: 100m
+# #              memory: 100Mi
+# #            limits:
+# #              cpu: 500m
+# #              memory: 500Mi
+# #          readinessProbe:
+# #            tcpSocket:
+# #              port: 15679
+# #            initialDelaySeconds: 60
+# #            periodSeconds: 10
+# #            timeoutSeconds: 5
+# ---
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: ts-consign-price-service
+#   namespace: train-ticket
+# spec:
+#   selector:
+#     matchLabels:
+#       app: ts-consign-price-service
+#   replicas: 1
+#   template:
+#     metadata:
+#       labels:
+#         app: ts-consign-price-service
+#     spec:
+#       containers:
+#         - name: ts-consign-price-service
+#           image: codewisdom/ts-consign-price-service:0.2.0
+#           imagePullPolicy: Always
+#           env:
+#             - name: NODE_IP
+#               valueFrom:
+#                 fieldRef:
+#                   fieldPath: status.hostIP
+#           ports:
+#             - containerPort: 16110
+# #          resources:
+# #            requests:
+# #              cpu: 100m
+# #              memory: 100Mi
+# #            limits:
+# #              cpu: 500m
+# #              memory: 500Mi
+# #          readinessProbe:
+# #            tcpSocket:
+# #              port: 16110
+# #            initialDelaySeconds: 60
+# #            periodSeconds: 10
+# #            timeoutSeconds: 5
+# ---
+
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: ts-consign-service
+#   namespace: train-ticket
+# spec:
+#   selector:
+#     matchLabels:
+#       app: ts-consign-service
+#   replicas: 1
+#   template:
+#     metadata:
+#       labels:
+#         app: ts-consign-service
+#     spec:
+#       containers:
+#         - name: ts-consign-service
+#           image: codewisdom/ts-consign-service:0.2.0
+#           imagePullPolicy: Always
+#           env:
+#             - name: NODE_IP
+#               valueFrom:
+#                 fieldRef:
+#                   fieldPath: status.hostIP
+#           ports:
+#             - containerPort: 16111
+# #          resources:
+# #            requests:
+# #              cpu: 100m
+# #              memory: 100Mi
+# #            limits:
+# #              cpu: 500m
+# #              memory: 500Mi
+# #          readinessProbe:
+# #            tcpSocket:
+# #              port: 16111
+# #            initialDelaySeconds: 60
+# #            periodSeconds: 10
+# #            timeoutSeconds: 5
+# # ---
 
 # apiVersion: apps/v1
 # kind: Deployment
@@ -1799,75 +1799,75 @@ spec:
   selector:
     app: ts-assurance-service
 
----
+# ---
 
-apiVersion: v1
-kind: Service
-metadata:
-  name: ts-basic-service
-  namespace: train-ticket
-spec:
-  ports:
-    - name: http
-      port: 15680
-  selector:
-    app: ts-basic-service
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: ts-basic-service
+#   namespace: train-ticket
+# spec:
+#   ports:
+#     - name: http
+#       port: 15680
+#   selector:
+#     app: ts-basic-service
 
----
+# ---
 
-apiVersion: v1
-kind: Service
-metadata:
-  name: ts-cancel-service
-  namespace: train-ticket
-spec:
-  ports:
-    - name: http
-      port: 18885
-  selector:
-    app: ts-cancel-service
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: ts-cancel-service
+#   namespace: train-ticket
+# spec:
+#   ports:
+#     - name: http
+#       port: 18885
+#   selector:
+#     app: ts-cancel-service
 
----
+# ---
 
-apiVersion: v1
-kind: Service
-metadata:
-  name: ts-config-service
-  namespace: train-ticket
-spec:
-  ports:
-    - name: http
-      port: 15679
-  selector:
-    app: ts-config-service
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: ts-config-service
+#   namespace: train-ticket
+# spec:
+#   ports:
+#     - name: http
+#       port: 15679
+#   selector:
+#     app: ts-config-service
 
----
+# ---
 
-apiVersion: v1
-kind: Service
-metadata:
-  name: ts-consign-price-service
-  namespace: train-ticket
-spec:
-  ports:
-    - name: http
-      port: 16110
-  selector:
-    app: ts-consign-price-service
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: ts-consign-price-service
+#   namespace: train-ticket
+# spec:
+#   ports:
+#     - name: http
+#       port: 16110
+#   selector:
+#     app: ts-consign-price-service
 
----
+# ---
 
-apiVersion: v1
-kind: Service
-metadata:
-  name: ts-consign-service
-  namespace: train-ticket
-spec:
-  ports:
-    - name: http
-      port: 16111
-  selector:
-    app: ts-consign-service
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: ts-consign-service
+#   namespace: train-ticket
+# spec:
+#   ports:
+#     - name: http
+#       port: 16111
+#   selector:
+#     app: ts-consign-service
 
 # ---
 
