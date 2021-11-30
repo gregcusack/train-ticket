@@ -1348,7 +1348,7 @@ spec:
     spec:
       containers:
         - name: ts-ticket-office-service
-          image: codewisdom/ts-ticket-office-service:0.2.0
+          image: gregcusack/ts-ticket-office-service:0.2.0
           imagePullPolicy: Always
           env:
             - name: NODE_IP
@@ -1681,7 +1681,7 @@ spec:
     spec:
       containers:
         - name: ts-voucher-service
-          image: codewisdom/ts-voucher-service:0.2.0
+          image: gregcusack/ts-voucher-service:0.2.0
           imagePullPolicy: Always
           env:
             - name: NODE_IP
