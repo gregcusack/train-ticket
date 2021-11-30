@@ -366,47 +366,47 @@ spec:
 #            initialDelaySeconds: 60
 #            periodSeconds: 10
 #            timeoutSeconds: 5
-# ---
+---
 
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ts-consign-price-service
-#   namespace: train-ticket
-# spec:
-#   selector:
-#     matchLabels:
-#       app: ts-consign-price-service
-#   replicas: 1
-#   template:
-#     metadata:
-#       labels:
-#         app: ts-consign-price-service
-#     spec:
-#       containers:
-#         - name: ts-consign-price-service
-#           image: codewisdom/ts-consign-price-service:0.2.0
-#           imagePullPolicy: Always
-#           env:
-#             - name: NODE_IP
-#               valueFrom:
-#                 fieldRef:
-#                   fieldPath: status.hostIP
-#           ports:
-#             - containerPort: 16110
-# #          resources:
-# #            requests:
-# #              cpu: 100m
-# #              memory: 100Mi
-# #            limits:
-# #              cpu: 500m
-# #              memory: 500Mi
-# #          readinessProbe:
-# #            tcpSocket:
-# #              port: 16110
-# #            initialDelaySeconds: 60
-# #            periodSeconds: 10
-# #            timeoutSeconds: 5
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ts-consign-price-service
+  namespace: train-ticket
+spec:
+  selector:
+    matchLabels:
+      app: ts-consign-price-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ts-consign-price-service
+    spec:
+      containers:
+        - name: ts-consign-price-service
+          image: codewisdom/ts-consign-price-service:0.2.0
+          imagePullPolicy: Always
+          env:
+            - name: NODE_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          ports:
+            - containerPort: 16110
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
+#          readinessProbe:
+#            tcpSocket:
+#              port: 16110
+#            initialDelaySeconds: 60
+#            periodSeconds: 10
+#            timeoutSeconds: 5
 # ---
 
 # apiVersion: apps/v1
@@ -1841,19 +1841,19 @@ spec:
   selector:
     app: ts-config-service
 
-# ---
+---
 
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: ts-consign-price-service
-#   namespace: train-ticket
-# spec:
-#   ports:
-#     - name: http
-#       port: 16110
-#   selector:
-#     app: ts-consign-price-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: ts-consign-price-service
+  namespace: train-ticket
+spec:
+  ports:
+    - name: http
+      port: 16110
+  selector:
+    app: ts-consign-price-service
 
 # ---
 
