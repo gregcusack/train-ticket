@@ -555,6 +555,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-notification-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -594,6 +595,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-delivery-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -628,6 +630,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rabbitmq
+  namespace: train-ticket
 spec:
   ports:
     - port: 5672
@@ -639,6 +642,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-user-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -650,6 +654,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-auth-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -661,6 +666,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-route-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -673,6 +679,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-contacts-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -685,6 +692,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-order-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -697,6 +705,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-order-other-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -709,6 +718,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-config-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -721,6 +731,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-station-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -733,6 +744,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-train-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -745,6 +757,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-travel-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -757,6 +770,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-travel2-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -769,6 +783,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-price-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -781,6 +796,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-security-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -793,6 +809,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-inside-payment-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -805,6 +822,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-payment-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -817,6 +835,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-assurance-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -829,6 +848,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-ticket-office-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -841,6 +861,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-voucher-mysql
+  namespace: train-ticket
 spec:
   ports:
     - port: 3306
@@ -853,6 +874,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-food-map-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -865,6 +887,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-consign-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -877,6 +900,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-consign-price-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
@@ -889,6 +913,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: ts-food-mongo
+  namespace: train-ticket
 spec:
   ports:
     - port: 27017
