@@ -2204,12 +2204,13 @@ kind: Service
 metadata:
   name: ts-travel-service
 spec:
+  type: NodePort
   ports:
     - name: http
       port: 12346
+      nodePort: 32255
   selector:
     app: ts-travel-service
-
 
 ---
 
