@@ -40,128 +40,128 @@
 # ---
 
 
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ts-admin-order-service
-#   namespace: train-ticket
-# spec:
-#   selector:
-#     matchLabels:
-#       app: ts-admin-order-service
-#   replicas: 1
-#   template:
-#     metadata:
-#       labels:
-#         app: ts-admin-order-service
-#     spec:
-#       containers:
-#         - name: ts-admin-order-service
-#           image: codewisdom/ts-admin-order-service:0.2.0
-#           imagePullPolicy: Always
-#           env:
-#             - name: NODE_IP
-#               valueFrom:
-#                 fieldRef:
-#                   fieldPath: status.hostIP
-#           ports:
-#             - containerPort: 16112
-# #          resources:
-# #            requests:
-# #              cpu: 100m
-# #              memory: 100Mi
-# #            limits:
-# #              cpu: 500m
-# #              memory: 500Mi
-# #          readinessProbe:
-# #            tcpSocket:
-# #              port: 16112
-# #            initialDelaySeconds: 60
-# #            periodSeconds: 10
-# #            timeoutSeconds: 5
-# ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ts-admin-order-service
+  namespace: train-ticket
+spec:
+  selector:
+    matchLabels:
+      app: ts-admin-order-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ts-admin-order-service
+    spec:
+      containers:
+        - name: ts-admin-order-service
+          image: codewisdom/ts-admin-order-service:0.2.0
+          imagePullPolicy: Always
+          env:
+            - name: NODE_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          ports:
+            - containerPort: 16112
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
+#          readinessProbe:
+#            tcpSocket:
+#              port: 16112
+#            initialDelaySeconds: 60
+#            periodSeconds: 10
+#            timeoutSeconds: 5
+---
 
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ts-admin-route-service
-#   namespace: train-ticket
-# spec:
-#   selector:
-#     matchLabels:
-#       app: ts-admin-route-service
-#   replicas: 1
-#   template:
-#     metadata:
-#       labels:
-#         app: ts-admin-route-service
-#     spec:
-#       containers:
-#         - name: ts-admin-route-service
-#           image: codewisdom/ts-admin-route-service:0.2.0
-#           imagePullPolicy: Always
-#           env:
-#             - name: NODE_IP
-#               valueFrom:
-#                 fieldRef:
-#                   fieldPath: status.hostIP
-#           ports:
-#             - containerPort: 16113
-# #          resources:
-# #            requests:
-# #              cpu: 100m
-# #              memory: 100Mi
-# #            limits:
-# #              cpu: 500m
-# #              memory: 500Mi
-# #          readinessProbe:
-# #            tcpSocket:
-# #              port: 16113
-# #            initialDelaySeconds: 60
-# #            periodSeconds: 10
-# #            timeoutSeconds: 5
-# ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ts-admin-route-service
+  namespace: train-ticket
+spec:
+  selector:
+    matchLabels:
+      app: ts-admin-route-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ts-admin-route-service
+    spec:
+      containers:
+        - name: ts-admin-route-service
+          image: codewisdom/ts-admin-route-service:0.2.0
+          imagePullPolicy: Always
+          env:
+            - name: NODE_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          ports:
+            - containerPort: 16113
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
+#          readinessProbe:
+#            tcpSocket:
+#              port: 16113
+#            initialDelaySeconds: 60
+#            periodSeconds: 10
+#            timeoutSeconds: 5
+---
 
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ts-admin-travel-service
-#   namespace: train-ticket
-# spec:
-#   selector:
-#     matchLabels:
-#       app: ts-admin-travel-service
-#   replicas: 1
-#   template:
-#     metadata:
-#       labels:
-#         app: ts-admin-travel-service
-#     spec:
-#       containers:
-#         - name: ts-admin-travel-service
-#           image: codewisdom/ts-admin-travel-service:0.2.0
-#           imagePullPolicy: Always
-#           env:
-#             - name: NODE_IP
-#               valueFrom:
-#                 fieldRef:
-#                   fieldPath: status.hostIP
-#           ports:
-#             - containerPort: 16114
-# #          resources:
-# #            requests:
-# #              cpu: 100m
-# #              memory: 100Mi
-# #            limits:
-# #              cpu: 500m
-# #              memory: 500Mi
-# #          readinessProbe:
-# #            tcpSocket:
-# #              port: 16114
-# #            initialDelaySeconds: 60
-# #            periodSeconds: 10
-# #            timeoutSeconds: 5
-# ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ts-admin-travel-service
+  namespace: train-ticket
+spec:
+  selector:
+    matchLabels:
+      app: ts-admin-travel-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ts-admin-travel-service
+    spec:
+      containers:
+        - name: ts-admin-travel-service
+          image: codewisdom/ts-admin-travel-service:0.2.0
+          imagePullPolicy: Always
+          env:
+            - name: NODE_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          ports:
+            - containerPort: 16114
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
+#          readinessProbe:
+#            tcpSocket:
+#              port: 16114
+#            initialDelaySeconds: 60
+#            periodSeconds: 10
+#            timeoutSeconds: 5
+---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -1731,47 +1731,47 @@ spec:
 
 # ---
 
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: ts-admin-order-service
-#   namespace: train-ticket
-# spec:
-#   ports:
-#     - name: http
-#       port: 16112
-#   selector:
-#     app: ts-admin-order-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: ts-admin-order-service
+  namespace: train-ticket
+spec:
+  ports:
+    - name: http
+      port: 16112
+  selector:
+    app: ts-admin-order-service
 
-# ---
+---
 
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: ts-admin-route-service
-#   namespace: train-ticket
-# spec:
-#   ports:
-#     - name: http
-#       port: 16113
-#   selector:
-#     app: ts-admin-route-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: ts-admin-route-service
+  namespace: train-ticket
+spec:
+  ports:
+    - name: http
+      port: 16113
+  selector:
+    app: ts-admin-route-service
 
-# ---
+---
 
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: ts-admin-travel-service
-#   namespace: train-ticket
-# spec:
-#   ports:
-#     - name: http
-#       port: 16114
-#   selector:
-#     app: ts-admin-travel-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: ts-admin-travel-service
+  namespace: train-ticket
+spec:
+  ports:
+    - name: http
+      port: 16114
+  selector:
+    app: ts-admin-travel-service
 
-# ---
+---
 
 apiVersion: v1
 kind: Service
