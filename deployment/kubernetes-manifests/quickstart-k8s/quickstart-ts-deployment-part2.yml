@@ -24,13 +24,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 18767
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18767
@@ -66,13 +66,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16112
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16112
@@ -107,13 +107,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16113
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16113
@@ -148,13 +148,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16114
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16114
@@ -189,13 +189,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16115
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16115
@@ -230,13 +230,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 18888
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18888
@@ -271,13 +271,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 15680
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 15680
@@ -312,13 +312,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 18885
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18885
@@ -353,13 +353,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 15679
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 15679
@@ -394,13 +394,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16110
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16110
@@ -435,13 +435,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16111
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16111
@@ -476,13 +476,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12347
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12347
@@ -517,13 +517,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12386
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12386
@@ -558,13 +558,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 18855
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18855
@@ -603,13 +603,13 @@ spec:
               value: "5672"
           ports:
             - containerPort: 18856
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18856
@@ -644,13 +644,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 18673
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18673
@@ -685,13 +685,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12340
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12340
@@ -726,13 +726,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12862
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12862
@@ -775,13 +775,13 @@ spec:
               value: "5672"
           ports:
             - containerPort: 17853
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 17853
@@ -816,13 +816,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12032
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12032
@@ -857,13 +857,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12031
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12031
@@ -898,13 +898,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 19001
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 19001
@@ -943,13 +943,13 @@ spec:
               value: "5672"
           ports:
             - containerPort: 14569
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 14569
@@ -988,13 +988,13 @@ spec:
               value: "5672"
           ports:
             - containerPort: 14568
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 14568
@@ -1029,13 +1029,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16579
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16579
@@ -1070,13 +1070,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 18886
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18886
@@ -1111,13 +1111,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 14578
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 14578
@@ -1152,13 +1152,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 11178
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 11178
@@ -1193,13 +1193,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 18898
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18898
@@ -1234,13 +1234,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 11188
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 11188
@@ -1275,13 +1275,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12342
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12342
@@ -1316,13 +1316,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12345
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12345
@@ -1357,13 +1357,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16108
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16108
@@ -1398,13 +1398,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 15681
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 15681
@@ -1439,13 +1439,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 14567
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 14567
@@ -1480,13 +1480,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16346
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16346
@@ -1521,13 +1521,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 14322
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 14322
@@ -1562,13 +1562,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 12346
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 12346
@@ -1607,13 +1607,13 @@ spec:
               value: "5672"
           ports:
             - containerPort: 18808
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 18808
@@ -1649,13 +1649,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 15678
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 15678
@@ -1690,13 +1690,13 @@ spec:
                   fieldPath: status.hostIP
           ports:
             - containerPort: 16101
-          resources:
-            requests:
-              cpu: 100m
-              memory: 100Mi
-            limits:
-              cpu: 500m
-              memory: 500Mi
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
 #          readinessProbe:
 #            tcpSocket:
 #              port: 16101
