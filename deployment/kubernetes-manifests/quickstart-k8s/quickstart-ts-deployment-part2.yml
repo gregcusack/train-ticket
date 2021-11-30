@@ -163,128 +163,128 @@
 # #            timeoutSeconds: 5
 # ---
 
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ts-admin-user-service
-#   namespace: train-ticket
-# spec:
-#   selector:
-#     matchLabels:
-#       app: ts-admin-user-service
-#   replicas: 1
-#   template:
-#     metadata:
-#       labels:
-#         app: ts-admin-user-service
-#     spec:
-#       containers:
-#         - name: ts-admin-user-service
-#           image: codewisdom/ts-admin-user-service:0.2.0
-#           imagePullPolicy: Always
-#           env:
-#             - name: NODE_IP
-#               valueFrom:
-#                 fieldRef:
-#                   fieldPath: status.hostIP
-#           ports:
-#             - containerPort: 16115
-# #          resources:
-# #            requests:
-# #              cpu: 100m
-# #              memory: 100Mi
-# #            limits:
-# #              cpu: 500m
-# #              memory: 500Mi
-# #          readinessProbe:
-# #            tcpSocket:
-# #              port: 16115
-# #            initialDelaySeconds: 60
-# #            periodSeconds: 10
-# #            timeoutSeconds: 5
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ts-admin-user-service
+  namespace: train-ticket
+spec:
+  selector:
+    matchLabels:
+      app: ts-admin-user-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ts-admin-user-service
+    spec:
+      containers:
+        - name: ts-admin-user-service
+          image: codewisdom/ts-admin-user-service:0.2.0
+          imagePullPolicy: Always
+          env:
+            - name: NODE_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          ports:
+            - containerPort: 16115
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
+#          readinessProbe:
+#            tcpSocket:
+#              port: 16115
+#            initialDelaySeconds: 60
+#            periodSeconds: 10
+#            timeoutSeconds: 5
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ts-assurance-service
+  namespace: train-ticket
+spec:
+  selector:
+    matchLabels:
+      app: ts-assurance-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ts-assurance-service
+    spec:
+      containers:
+        - name: ts-assurance-service
+          image: codewisdom/ts-assurance-service:0.2.0
+          imagePullPolicy: Always
+          env:
+            - name: NODE_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          ports:
+            - containerPort: 18888
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
+#          readinessProbe:
+#            tcpSocket:
+#              port: 18888
+#            initialDelaySeconds: 60
+#            periodSeconds: 10
+#            timeoutSeconds: 5
 # ---
 
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ts-assurance-service
-#   namespace: train-ticket
-# spec:
-#   selector:
-#     matchLabels:
-#       app: ts-assurance-service
-#   replicas: 1
-#   template:
-#     metadata:
-#       labels:
-#         app: ts-assurance-service
-#     spec:
-#       containers:
-#         - name: ts-assurance-service
-#           image: codewisdom/ts-assurance-service:0.2.0
-#           imagePullPolicy: Always
-#           env:
-#             - name: NODE_IP
-#               valueFrom:
-#                 fieldRef:
-#                   fieldPath: status.hostIP
-#           ports:
-#             - containerPort: 18888
-# #          resources:
-# #            requests:
-# #              cpu: 100m
-# #              memory: 100Mi
-# #            limits:
-# #              cpu: 500m
-# #              memory: 500Mi
-# #          readinessProbe:
-# #            tcpSocket:
-# #              port: 18888
-# #            initialDelaySeconds: 60
-# #            periodSeconds: 10
-# #            timeoutSeconds: 5
-# # ---
-
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: ts-basic-service
-#   namespace: train-ticket
-# spec:
-#   selector:
-#     matchLabels:
-#       app: ts-basic-service
-#   replicas: 1
-#   template:
-#     metadata:
-#       labels:
-#         app: ts-basic-service
-#     spec:
-#       containers:
-#         - name: ts-basic-service
-#           image: codewisdom/ts-basic-service:0.2.0
-#           imagePullPolicy: Always
-#           env:
-#             - name: NODE_IP
-#               valueFrom:
-#                 fieldRef:
-#                   fieldPath: status.hostIP
-#           ports:
-#             - containerPort: 15680
-# #          resources:
-# #            requests:
-# #              cpu: 100m
-# #              memory: 100Mi
-# #            limits:
-# #              cpu: 500m
-# #              memory: 500Mi
-# #          readinessProbe:
-# #            tcpSocket:
-# #              port: 15680
-# #            initialDelaySeconds: 60
-# #            periodSeconds: 10
-# #            timeoutSeconds: 5
-# ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ts-basic-service
+  namespace: train-ticket
+spec:
+  selector:
+    matchLabels:
+      app: ts-basic-service
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ts-basic-service
+    spec:
+      containers:
+        - name: ts-basic-service
+          image: codewisdom/ts-basic-service:0.2.0
+          imagePullPolicy: Always
+          env:
+            - name: NODE_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.hostIP
+          ports:
+            - containerPort: 15680
+#          resources:
+#            requests:
+#              cpu: 100m
+#              memory: 100Mi
+#            limits:
+#              cpu: 500m
+#              memory: 500Mi
+#          readinessProbe:
+#            tcpSocket:
+#              port: 15680
+#            initialDelaySeconds: 60
+#            periodSeconds: 10
+#            timeoutSeconds: 5
+---
 
 apiVersion: apps/v1
 kind: Deployment
@@ -1773,47 +1773,47 @@ spec:
 
 # ---
 
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: ts-admin-user-service
-#   namespace: train-ticket
-# spec:
-#   ports:
-#     - name: http
-#       port: 16115
-#   selector:
-#     app: ts-admin-user-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: ts-admin-user-service
+  namespace: train-ticket
+spec:
+  ports:
+    - name: http
+      port: 16115
+  selector:
+    app: ts-admin-user-service
 
-# ---
+---
 
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: ts-assurance-service
-#   namespace: train-ticket
-# spec:
-#   ports:
-#     - name: http
-#       port: 18888
-#   selector:
-#     app: ts-assurance-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: ts-assurance-service
+  namespace: train-ticket
+spec:
+  ports:
+    - name: http
+      port: 18888
+  selector:
+    app: ts-assurance-service
 
-# ---
+---
 
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: ts-basic-service
-#   namespace: train-ticket
-# spec:
-#   ports:
-#     - name: http
-#       port: 15680
-#   selector:
-#     app: ts-basic-service
+apiVersion: v1
+kind: Service
+metadata:
+  name: ts-basic-service
+  namespace: train-ticket
+spec:
+  ports:
+    - name: http
+      port: 15680
+  selector:
+    app: ts-basic-service
 
-# ---
+---
 
 apiVersion: v1
 kind: Service
