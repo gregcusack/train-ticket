@@ -1693,8 +1693,8 @@ spec:
           readinessProbe:
             tcpSocket:
               port: 16101
-            initialDelaySeconds: 7
-            periodSeconds: 4
+            initialDelaySeconds: 12
+            periodSeconds: 10
             timeoutSeconds: 5
 #          resources:
 #            requests:
